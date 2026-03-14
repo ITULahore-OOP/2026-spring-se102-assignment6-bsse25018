@@ -16,7 +16,7 @@ int calculateTotalGuildPower();
 void displayGuildStats();
 void operator+=(Hero* h);
 friend ostream& operator <<(ostream& , Guild &g);
-
+//Extra Getter for my help used  it in main
 Hero* getHero(int index);
 int getMemberCount();
 }; 

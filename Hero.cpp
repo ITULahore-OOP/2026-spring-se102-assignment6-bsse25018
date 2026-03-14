@@ -1,4 +1,7 @@
 #include "Hero.h"
+// Hero is the base class.
+// Warrior, Knight, and SpellBlade are derived classes that extend Hero
+// and add their own special abilities.
 Hero:: Hero(){
     heroName="Ragnar Lothbrok";
     health = 100;

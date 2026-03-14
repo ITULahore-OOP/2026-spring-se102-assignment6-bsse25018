@@ -1,4 +1,6 @@
 #include "SpellBlade.h"
+//Inherits Warrior and Magical Entity
+//Shows Multiple Inheritance
 SpellBlade:: SpellBlade() : Warrior(), MagicalEntity(0, 0) {}
 SpellBlade:: SpellBlade(string n, int h,int bP,int aR,int mP,int sP):Warrior(n,h,bP,aR),MagicalEntity(mP,sP){};
 int SpellBlade:: calculateHybridDamage(){

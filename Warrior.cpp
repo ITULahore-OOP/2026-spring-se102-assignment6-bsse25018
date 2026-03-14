@@ -1,4 +1,5 @@
 #include "Warrior.h"
+// Inherits Hero
 Warrior:: Warrior(){
     armorRating = 100;
 

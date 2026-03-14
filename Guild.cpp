@@ -4,14 +4,14 @@ Guild::Guild(string name) : guildName(name)
     memberCount = 0;
     for (int i = 0; i < 15; i++)
     {
-        roster[i] = nullptr;
+        roster[i] = nullptr; // Initializing with nullptr
     }
 }
 Guild::~Guild()
 {
     //  delete here because  we were asked to do in docx otherwise it will not work
     //  cozz there is no memory allocation it will give segmentation fault
-    // for (int i = 0; i < memberCount; i++) { 
+    // for (int i = 0; i < memberCount; i++) {
     //      delete roster[i];
     //}
 
@@ -67,8 +67,8 @@ string Guild::getName()
 {
     return guildName;
 }
-
-Hero* Guild::getHero(int index)
+// This is an extra getter i made to get the value stored at the particular index in roster array
+Hero *Guild::getHero(int index)
 {
     if (index >= 0 && index < memberCount)
         return roster[index];
